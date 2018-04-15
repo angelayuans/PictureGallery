@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Feedback Page</title>
+<!--  <link rel="stylesheet" type="text/css" href="contact_style.css">-->
+  <script src="contact.js"> </script>
+</head>
+<!--End of Header -->
+<body style="font-family:Arial" >
+   <h1 >Contact us</p>
+   <form name='registration' onSubmit="return Validation();" method="post" action="mailto:pingc@cadence.com">
+   <ul>
+   <label for="fname" style="font-size:20px">First name:</label><br>
+   <input type="text" name="fname" size="50" placeholder="i.e: First" /><br>
+   <label for="lname" style="font-size:20px">Last name:</label><br>
+   <input type="text" name="lname" size="50" placeholder="i.e: Last" /><br>
+<!--   <li><label for="address">Address:</label></li>
+   <li><input type="text" name="address" size="50" placeholder="i.e: 11612 " /></li>
+   <li><label for="Mnumber">Mobile number:</label></li>
+   <li><input type="text" name="Mnumber"  placeholder="i.e: 00971501234567"/></li> -->
+   <label for="email" style="font-size:20px">Email:</label><br>
+   <input type="text" name="email" size="100" placeholder="i.e: first.last@yahoo.com" /><br>
+   <label for="desc" style="font-size:20px">Inquiry:</label><br>
+   <input type="text"  name="inquiry" size="100" style="height:20px"></textarea><br>
+   <input type="submit" name="submit" value="Submit" />
+  </ul>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: auto;
+      margin: 0;
+	  height: auto;
+  }
+  
+  #border1{
+	border:1px solid black;	
+  }
+  .container{
+	background-color:black;
+	width:90%;
+	height:90%
+  }
+  #imgid{
+  	position: fixed;
+  	top:0;
+  	left:0;
+  	width: 100%;
+  	height:100%;
+  	align-items:center;
+  	justify-content:center;
+  	background-color: rgba(0,0,0,0.7);
+  	display: none;
+  }
+  </style>
+  </meta>
+</head>
+
+<body style="background-color: #a6c1c3;" >
+		<p style="text-align:center">Thanks for visiting! Sophia want to use ART help community and If you like the art, please contact us! or Make donation to teenchallenge.</p>
+		<img src='./sketches/IMG_2101.jpg' style="align:center" onclick="large(this)">
+		<img src='./sketches/IMG_2096.jpg'  onclick="large(this)"> 
+		<img src='./oilpainting/IMG_4349.jpg' onclick="large(this)">
+		<img src='./figuredrawing/IMG_4300.jpg' style="align:right" onclick="large(this)">		
+		<img src='./oilpainting/IMG_4353.jpg' style="align:right" onclick="large(this)">
+		<img src='./architect/IMG_4355.jpg' style="align:center" onclick="large(this)">
+		<img src='./watercolor/IMG_4334.jpg' style="aligh:center;vertical-align:bottom" onclick="large(this)">
+		<img src='./digitalart/digital2.jpg' style="align:right;vertical-algin:bottom" onclick="large(this)">
+		<img src='./digitalart/digital3.jpg'>
+		<img src='./oilpainting/IMG_4356.jpg'>
+	<div id="imgid" onclick="small(this)">
+		<img src="" >
+	</div>
+	<script type="text/javascript">
+		function large(img){
+			var a = document.getElementById("imgid").getElementsByTagName('img')[0];
+			a.src = img.src;
+			a.width = img.width*1.5;
+			a.height = img.height*1.5;
+			document.getElementById("imgid").style.display = "flex";
+			
+		}
+		function small(imgid){
+			imgid.style.display = "none";
+		}
+	</script>
+</body>
+</html>

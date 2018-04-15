@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!-- Body Starts Here -->
+<body style="background-color: #a6c1c3";>
+<!--<img src='abstract_background_template_for_style_design_267606.jpg' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>-->
+<H3 align="center"> About Teen Challenge </H3>
+<H4> Teen Challenge is holistic -- meaning that we are concerned with the body, mind, and spirit of those who come to us for help. We endeavor to help people become mentally sound, emotionally balanced, socially adjusted, physically well, and spiritually alive.</H4>
+<!--<H4> For more information <a href="http://teenchallengeusa.com/about"> Visit TeenChallenge Website!</a> </H4>-->
+<p>Donation($):
+<input type name="amount" id="amount" onchange="payAmount()"value="" ><br/></p>
+<a href="https://www.paypal.com/cgi-bin/webscr?business=everythingok000@gmail.com&cmd=_xclick&currency_code=USD&amount=20&item_name=For Donation" name="_xclick" target="paypal" id="payment">
+<img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;"></a>
+<script>
+var query="https://www.paypal.com/cgi-bin/webscr?business=everythingok000@gmail.com&cmd=_xclick&currency_code=USD&item_name=For Donation";
+function payAmount(){
+	var amount=document.getElementById('amount').value;
+	if(!amount || amount==0){
+		amount="0.01";
+	}
+	query=query+"&amount="+amount;
+	document.getElementById("payment").href=query;
+}
+
+</script>
+</body>
+</html>
